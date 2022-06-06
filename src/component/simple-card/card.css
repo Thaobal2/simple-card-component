@@ -57,7 +57,7 @@
     border-radius:5px;
     padding:1rem 0;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: bold;
     background:#fff;
     color:black;
     display: flex;
@@ -94,7 +94,7 @@
     background:grey;
     color: #fff;
     margin-top:1rem;
-    transition: background 350ms;
+    transition: transform 350ms;
     
 }
 .btn:hover {

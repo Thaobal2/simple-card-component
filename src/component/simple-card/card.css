@@ -26,32 +26,34 @@
 
 .container__top {
     display:flex;
-    width:80%;
-    justify-content:space-around;
+    flex-direction: column;
     align-items: center;
+    width:100%;
+    /* justify-content:space-around; */
 }
 .containerTop__image {
-    width:12rem;
-    height:12rem;
+    width:10rem;
+    height:10rem;
     border-radius:2rem 2rem 0 0;
+    margin-bottom: 20px;
 }
+
 
 .image__top {
     width:100%;
     height:100%;
-    border-radius:50%;
-
-
+    border-radius:100%;
     object-fit: cover;
 }
 
 .containerTop__inputs {
     display : flex;
     flex-direction:column;
+    align-items: center;
 }
 
 .label__image {
-    width:20rem;
+    width:15rem;
     height:2.5rem;
     margin:.4rem 0;
     border-radius:5px;
@@ -71,7 +73,7 @@
 }
 
 .input {
-    width:20rem;
+    width:15rem;
     height:2.5rem;
     margin:.4rem 0;
     border-radius:5px;
@@ -83,7 +85,7 @@
 }
 
 .btn {
-    width:20rem;
+    width:15rem;
     border-radius:5px;
     outline:none;
     border:0;
@@ -95,14 +97,15 @@
     color: #fff;
     margin-top:1rem;
     transition: transform 350ms;
-    
 }
+
 .btn:hover {
     background:teal;
     transform : scale(1.02)
 }
 
 .card__container {
+    width:100%;
     display:flex;
     justify-content:center;
     flex-wrap : wrap;
@@ -110,10 +113,10 @@
 }
 
 .card {
-    padding:2rem;
-    width:25rem;
+    padding:1rem;
+    width:23rem;
     /* height:30rem; */
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     background:blue;
     margin:10px;
     display: flex;
@@ -146,7 +149,7 @@ cursor:pointer;
 }
 
 .card__quote {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: italic;
     text-align: center;
 }
@@ -161,6 +164,59 @@ cursor:pointer;
 .card__time {
     font-size: 2rem;
     color:#ff0000;
+
+
+}
+
+
+
+@media screen and (min-width:1024px) {
+    .container__top {
+        flex-direction: row;
+        width:80%;
+        justify-content:space-around;
+    }
+    .containerTop__image {
+        width:12rem;
+        height:12rem;
+        margin-bottom: 0;
+
+    }
+    .label__image {
+        width:20rem;
+        margin:.4rem 0;
+    }
+    .input {
+        width:20rem;
+        border-radius:5px;
+    
+    }
+    .btn {
+        width:20rem;
+ 
+    }
+    .card {
+        padding:2rem;
+        width:25rem;
+        /* height:30rem; */
+        border-radius: 1.5rem;
+    }
+    
+    .card__container {
+        display:flex;
+        justify-content:center;
+        flex-wrap : wrap;
+        margin-top:5rem;
+    }
+    
+    .card {
+        padding:2rem;
+        width:25rem;
+      
+    }
+    .card__quote {
+        font-size: 1.5rem;
+    }
 
 
 }
